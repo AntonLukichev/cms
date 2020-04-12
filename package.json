@@ -1,0 +1,47 @@
+{
+  "name": "cms-boilerplate",
+  "version": "0.1.0",
+  "description": "CMS boilerplate for landings and sites",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint src/** --ext .ts,.tsx",
+    "lint:fix": "npm run lint --fix"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AntonLukichev/cms.git"
+  },
+  "keywords": [],
+  "author": {
+    "name": "Anton Lukichev",
+    "email": "anton@lukichev.pro"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/AntonLukichev/cms/issues"
+  },
+  "homepage": "https://github.com/AntonLukichev/cms#readme",
+  "dependencies": {
+    "next": "^9.3.4",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
+  },
+  "devDependencies": {
+    "@types/node": "^13.11.1",
+    "@types/react": "^16.9.34",
+    "@types/react-dom": "^16.9.6",
+    "@typescript-eslint/eslint-plugin": "^2.27.0",
+    "@typescript-eslint/parser": "^2.27.0",
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb": "^18.1.0",
+    "eslint-plugin-import": "^2.20.2",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-react": "^7.19.0",
+    "eslint-plugin-react-hooks": "^2.5.1",
+    "typescript": "^3.8.3"
+  }
+}
