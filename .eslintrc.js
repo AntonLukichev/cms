@@ -36,14 +36,11 @@ module.exports = {
     'import'
   ],
   rules: {
+    'react/prop-types': 0,
     'react-hooks/rules-of-hooks': 'error',
     'react-hooks/exhaustive-deps': 'warn',
     'indent': ['error', 2, {
       'SwitchCase': 1,
-      'MemberExpression': 1,
-      'ArrayExpression': 1,
-      'ObjectExpression': 1,
-      'ImportDeclaration': 1,
     }],
     'react/jsx-filename-extension': [1, { 'extensions': ['.js', '.jsx', '.ts', '.tsx'] }],
     'import/extensions': ['error', 'ignorePackages', {

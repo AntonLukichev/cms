@@ -1,19 +1,12 @@
 import React from 'react';
-import Link from 'next/link';
-import Header from '../components/Header';
+import Layout from '../layouts';
 
 const IndexPage: React.FunctionComponent = () => (
-  <>
-    <Header />
+  <Layout>
     <div>
       <p>Hello Next.js</p>
     </div>
-    <div>
-      <Link href="/about">
-        <a>About Page</a>
-      </Link>
-    </div>
-  </>
+  </Layout>
 );
 
 export default IndexPage;
