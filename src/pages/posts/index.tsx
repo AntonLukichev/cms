@@ -1,6 +1,7 @@
-import React from 'react';
+import React, { FC } from 'react';
 import { NextPage } from 'next';
 import fetch from 'isomorphic-unfetch';
+import Link from 'next/link';
 import Layout from '../../layouts';
 
 interface PostItem {
@@ -14,13 +15,19 @@ interface PostsPageProps {
   items: Array<PostItem>;
 }
 
+const PostLink: FC<{item: PostItem}> = ({ item }) => (
+  <div>
+    <Link href="/posts/[id]" as={`/posts/${item.id}`} key={item.id}>
+      <a>{item.title}</a>
+    </Link>
+  </div>
+);
+
 const PostsPage: NextPage<PostsPageProps> = ({ items }) => {
   return (
     <Layout>
       {items.map((item: PostItem) => (
-        <div>
-          {item.title}
-        </div>
+        <PostLink item={item} key={item.id} />
       ))}
     </Layout>
   );
