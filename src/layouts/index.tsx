@@ -12,13 +12,15 @@ const layoutStyle = {
 interface LayoutProps {
   children?: React.ReactNode;
   title?: string;
+  description?: string;
 }
 
-const AppHeader: FC<{title: string}> = ({ title }) => (
+const CmsHeader: FC<{title: string; description: string}> = ({ title, description }) => (
   <Head>
     <title>{title}</title>
     <meta charSet="utf-8" />
     <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+    <meta name="description" content={description} />
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet" />
   </Head>
 );
@@ -27,10 +29,14 @@ const Layout: FC = (
   {
     children,
     title = 'CMS boilerplate',
+    description = 'Page CMS boilerplate',
   }: LayoutProps,
 ) => (
   <>
-    <AppHeader title={title} />
+    <CmsHeader
+      title={title}
+      description={description}
+    />
     <main style={layoutStyle}>
       <Header />
       {children}

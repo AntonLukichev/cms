@@ -1,11 +1,11 @@
-import React from 'react';
+import React, { FC } from 'react';
 import Link from 'next/link';
 
 const linkStyle = {
   marginRight: 15,
 };
 
-const Header: React.FunctionComponent = () => (
+const Header: FC = () => (
   <div>
     <Link href="/">
       <a style={linkStyle} title="Home">Home</a>

@@ -12,7 +12,7 @@ interface PostItem {
 }
 
 interface PostsPageProps {
-  items: Array<PostItem>;
+  items: PostItem[];
 }
 
 const PostLink: FC<{item: PostItem}> = ({ item }) => (
@@ -23,21 +23,18 @@ const PostLink: FC<{item: PostItem}> = ({ item }) => (
   </div>
 );
 
-const PostsPage: NextPage<PostsPageProps> = ({ items }) => {
-  return (
-    <Layout>
-      {items.map((item: PostItem) => (
-        <PostLink item={item} key={item.id} />
-      ))}
-    </Layout>
-  );
-};
+const PostsPage: NextPage<PostsPageProps> = ({ items }) => (
+  <Layout>
+    {items.map((item: PostItem) => (
+      <PostLink item={item} key={item.id} />
+    ))}
+  </Layout>
+);
 
 // eslint-disable-next-line @typescript-eslint/unbound-method
 PostsPage.getInitialProps = async () => {
   const res = await fetch('http://jsonplaceholder.typicode.com/posts');
   const data = await res.json();
-
 
   return {
     items: data,

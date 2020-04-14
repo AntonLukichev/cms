@@ -1,7 +1,7 @@
-import React from 'react';
+import React, { FC } from 'react';
 import Layout from '../layouts';
 
-const IndexPage: React.FunctionComponent = () => (
+const IndexPage: FC = () => (
   <Layout>
     <div>
       <p>Hello Next.js</p>
