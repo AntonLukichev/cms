@@ -9,7 +9,9 @@
     "start": "next start",
     "test": "echo \"Error: no test specified\" && exit 1",
     "lint": "eslint src/** --ext .ts,.tsx",
-    "lint:fix": "npm run lint --fix"
+    "lint:fix": "npm run lint --fix",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
   },
   "repository": {
     "type": "git",
