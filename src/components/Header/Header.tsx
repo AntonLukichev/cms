@@ -6,7 +6,7 @@ const linkStyle = {
 };
 
 const Header: FC = () => (
-  <div>
+  <header>
     <Link href="/">
       <a style={linkStyle} title="Home">Home</a>
     </Link>
@@ -16,7 +16,7 @@ const Header: FC = () => (
     <Link href="/about">
       <a style={linkStyle} title="About Page">About</a>
     </Link>
-  </div>
+  </header>
 );
 
 export default Header;
