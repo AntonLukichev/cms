@@ -1,6 +1,7 @@
 import React, { FC } from 'react';
 import Head from 'next/head';
-import Header from '../components/Header';
+import Header from '../components/Header/Header';
+import Footer from '../components/Footer/Footer';
 
 const layoutStyle = {
   margin: 20,
@@ -15,7 +16,7 @@ interface LayoutProps {
   description?: string;
 }
 
-const CmsHeader: FC<{title: string; description: string}> = ({ title, description }) => (
+const CmsHead: FC<{title: string; description: string}> = ({ title, description }) => (
   <Head>
     <title>{title}</title>
     <meta charSet="utf-8" />
@@ -33,14 +34,15 @@ const Layout: FC = (
   }: LayoutProps,
 ) => (
   <>
-    <CmsHeader
+    <CmsHead
       title={title}
       description={description}
     />
+    <Header />
     <main style={layoutStyle}>
-      <Header />
       {children}
     </main>
+    <Footer />
   </>
 );
 
