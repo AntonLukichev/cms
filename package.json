@@ -1,6 +1,6 @@
 {
   "name": "cms-boilerplate",
-  "version": "0.1.0",
+  "version": "0.1.2",
   "description": "CMS boilerplate for landings and sites",
   "main": "index.js",
   "scripts": {
