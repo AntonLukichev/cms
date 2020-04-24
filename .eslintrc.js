@@ -55,6 +55,7 @@ module.exports = {
       'specialLink': ['hrefLeft', 'hrefRight'],
       'aspects': ['invalidHref', 'preferButton']
     }],
+    'react/jsx-props-no-spreading': 0,
   },
   settings: {
     'import/parsers': {
