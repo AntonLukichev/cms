@@ -31,7 +31,7 @@ const PostsPage: NextPage<PostsPageProps> = ({ items }) => (
   </Layout>
 );
 
-// eslint-disable-next-line @typescript-eslint/unbound-method
+// eslint-disable-next-line
 PostsPage.getInitialProps = async () => {
   const res = await fetch('http://jsonplaceholder.typicode.com/posts');
   const data = await res.json();
