@@ -1,15 +1,15 @@
-import React from 'react';
+import React, { ReactElement } from 'react';
 import Document, {
   Html,
   Head,
   Main,
   NextScript,
+  DocumentInitialProps,
 } from 'next/document';
 import { ServerStyleSheets } from '@material-ui/core/styles';
 
-// eslint-disable-next-line
 export default class CmsDocument extends Document {
-  render() {
+  render(): ReactElement {
     return (
       <Html lang="ru">
         <Head />
@@ -23,13 +23,15 @@ export default class CmsDocument extends Document {
 }
 
 // eslint-disable-next-line @typescript-eslint/unbound-method
-CmsDocument.getInitialProps = async (ctx) => {
+CmsDocument.getInitialProps = async (ctx): Promise<DocumentInitialProps> => {
   const sheets = new ServerStyleSheets();
   const originalRenderPage = ctx.renderPage;
 
+  /* eslint-disable */
   ctx.renderPage = () => originalRenderPage({
     enhanceApp: (App) => (props) => sheets.collect(<App {...props} />),
   });
+  /* eslint-enable */
 
   const initialProps = await Document.getInitialProps(ctx);
 

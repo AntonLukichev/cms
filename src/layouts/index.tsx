@@ -16,7 +16,7 @@ interface LayoutProps {
   description?: string;
 }
 
-const CmsHead: FC<{title: string; description: string}> = ({ title, description }) => (
+const CmsHead: FC<{ title: string; description: string }> = ({ title, description }) => (
   <Head>
     <title>{title}</title>
     <meta name="description" content={description} />
