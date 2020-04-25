@@ -6,6 +6,7 @@
   "scripts": {
     "dev": "next",
     "build": "next build",
+    "build:analyze": "cross-env ANALYZE=true npm run build",
     "start": "next start",
     "test": "echo \"Error: no test specified\" && exit 1",
     "lint": "eslint src/** --ext .ts,.tsx",
@@ -36,6 +37,7 @@
     "react-dom": "^16.13.1"
   },
   "devDependencies": {
+    "@next/bundle-analyzer": "^9.3.5",
     "@storybook/addon-actions": "^5.3.18",
     "@storybook/addon-info": "^5.3.18",
     "@storybook/addon-links": "^5.3.18",
@@ -49,6 +51,7 @@
     "@typescript-eslint/eslint-plugin": "^2.29.0",
     "@typescript-eslint/parser": "^2.29.0",
     "babel-loader": "^8.1.0",
+    "cross-env": "^7.0.2",
     "eslint": "^6.8.0",
     "eslint-config-airbnb": "^18.1.0",
     "eslint-plugin-import": "^2.20.2",
