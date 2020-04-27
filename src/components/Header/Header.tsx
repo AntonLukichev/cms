@@ -6,7 +6,7 @@ const linkStyle = {
 };
 
 const Header: FC = () => (
-  <header>
+  <header data-testid="header">
     <Link href="/">
       <a style={linkStyle} title="Home">Home</a>
     </Link>

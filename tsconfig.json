@@ -26,10 +26,7 @@
     "target": "esnext"
   },
   "exclude": [
-    "node_modules",
-    "**/*.spec.ts",
-    "**/*.spec.tsx",
-    "**/*.spec.js"
+    "node_modules"
   ],
   "include": [
     "src"
