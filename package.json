@@ -6,6 +6,7 @@
   "scripts": {
     "dev": "next",
     "build": "next build",
+    "build:analyze": "cross-env ANALYZE=true npm run build",
     "start": "next start",
     "test": "jest",
     "test:watch": "jest --watch",
@@ -29,7 +30,7 @@
   },
   "homepage": "https://github.com/AntonLukichev/cms#readme",
   "dependencies": {
-    "@material-ui/core": "^4.9.11",
+    "@material-ui/core": "^4.9.12",
     "clsx": "^1.1.0",
     "isomorphic-unfetch": "^3.0.0",
     "next": "^9.3.5",
@@ -37,6 +38,7 @@
     "react-dom": "^16.13.1"
   },
   "devDependencies": {
+    "@next/bundle-analyzer": "^9.3.5",
     "@storybook/addon-actions": "^5.3.18",
     "@storybook/addon-info": "^5.3.18",
     "@storybook/addon-links": "^5.3.18",
@@ -46,12 +48,13 @@
     "@testing-library/jest-dom": "^5.5.0",
     "@testing-library/react": "^10.0.3",
     "@types/jest": "^25.2.1",
-    "@types/node": "^13.13.2",
+    "@types/node": "^13.13.4",
     "@types/react": "^16.9.34",
-    "@types/react-dom": "^16.9.6",
-    "@typescript-eslint/eslint-plugin": "^2.29.0",
-    "@typescript-eslint/parser": "^2.29.0",
+    "@types/react-dom": "^16.9.7",
+    "@typescript-eslint/eslint-plugin": "^2.30.0",
+    "@typescript-eslint/parser": "^2.30.0",
     "babel-loader": "^8.1.0",
+    "cross-env": "^7.0.2",
     "eslint": "^6.8.0",
     "eslint-config-airbnb": "^18.1.0",
     "eslint-plugin-import": "^2.20.2",
