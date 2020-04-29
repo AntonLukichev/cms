@@ -1,6 +1,6 @@
 {
   "name": "cms-boilerplate",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "CMS boilerplate for landings and sites",
   "main": "index.js",
   "scripts": {
@@ -8,7 +8,8 @@
     "build": "next build",
     "build:analyze": "cross-env ANALYZE=true npm run build",
     "start": "next start",
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "jest",
+    "test:watch": "jest --watch",
     "lint": "eslint src/** --ext .ts,.tsx",
     "lint:fix": "npm run lint --fix",
     "storybook": "start-storybook -p 6006 -c .storybook --debug-webpack",
@@ -44,6 +45,8 @@
     "@storybook/addons": "^5.3.18",
     "@storybook/preset-typescript": "^3.0.0",
     "@storybook/react": "^5.3.18",
+    "@testing-library/jest-dom": "^5.5.0",
+    "@testing-library/react": "^10.0.3",
     "@types/jest": "^25.2.1",
     "@types/node": "^13.13.4",
     "@types/react": "^16.9.34",

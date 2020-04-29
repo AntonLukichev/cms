@@ -3,6 +3,7 @@ module.exports = {
     browser: true,
     es6: true,
     node: true,
+    jest: true,
   },
   extends: [
     'eslint:recommended',
@@ -66,6 +67,9 @@ module.exports = {
       'node': {
         'extensions': ['.js', '.jsx', '.ts', '.tsx'],
       },
+    },
+    react: {
+      version: 'detect',
     },
   },
 };

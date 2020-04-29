@@ -1,7 +1,7 @@
 import React, { FC } from 'react';
 
 const Footer: FC = () => (
-  <footer>
+  <footer data-testid="footer">
     {
       // Footer
     }
