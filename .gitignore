@@ -32,7 +32,7 @@ pids
 *.pid.lock
 
 # Coverage directory used by tools like istanbul
-coverage
+/coverage
 
 # Dependency directories
 /node_modules
