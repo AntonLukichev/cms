@@ -61,7 +61,7 @@
     "eslint-plugin-jsx-a11y": "^6.2.3",
     "eslint-plugin-react": "^7.19.0",
     "eslint-plugin-react-hooks": "^2.5.1",
-    "jest": "^25.4.0",
+    "jest": "^25.5.0",
     "react-docgen-typescript-loader": "^3.7.2",
     "ts-jest": "^25.4.0",
     "ts-loader": "^7.0.1",
