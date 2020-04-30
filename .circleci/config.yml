@@ -16,13 +16,10 @@ jobs:
           steps:
             - run: npm install
             - run: npm test
-      - store_test_results:
-          path: ./coverage
       - store_artifacts:
           path: ./coverage
       - save_cache:
           paths:
-            - ./node_modules
             - ./.next/cache
           key: dependency-cache-{{ .Branch }}-{{ checksum "package.json" }}
 workflows:
