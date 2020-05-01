@@ -10,9 +10,12 @@ jobs:
       - node/with-cache:
           steps:
             - run: npm install
-            - run: npm run lint:report
+            - run: npm run lint:report-html
+            - run: npm run lint:report-junit
+      - store_test_results:
+          path: ./reports
       - store_artifacts:
-          path: ./coverage
+          path: ./reports
   test:
     executor:
       name: node/default
