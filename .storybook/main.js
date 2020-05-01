@@ -4,10 +4,12 @@ const STORIES_PATH = path.join(__dirname, '../stories');
 const NODE_MODULES = path.join(__dirname, '../node_modules');
 
 module.exports = {
+  stories: ["../stories/**/*.stories.(ts|tsx)"],
   addons: [
     '@storybook/preset-typescript',
     '@storybook/addon-actions',
     '@storybook/addon-links',
+    '@storybook/addon-storysource',
   ],
   webpackFinal: async config => {
     config.module.rules.push({
@@ -21,7 +23,6 @@ module.exports = {
             configFile: path.resolve(__dirname, './tsconfig.json'),
           }
         },
-        // Optional
         {
           loader: require.resolve('react-docgen-typescript-loader'),
           options: {

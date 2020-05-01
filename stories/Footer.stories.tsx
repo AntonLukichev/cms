@@ -1,13 +1,13 @@
 import React, { ReactElement } from 'react';
-import Header from '../src/components/Header';
+import Footer from '../src/components/Footer';
 
 export default {
-  component: Header,
-  title: 'Header',
+  component: Footer,
+  title: 'Footer',
   includeStories: /.*Story$/,
   excludeStories: /.*Data$/,
 };
 
 export const DefaultStory = (): ReactElement => (
-  <Header />
+  <Footer />
 );
