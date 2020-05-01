@@ -37,7 +37,10 @@ const Layout: FC = (
       description={description}
     />
     <Header />
-    <main style={layoutStyle}>
+    <main
+      style={layoutStyle}
+      data-testid="mainLayout"
+    >
       {children}
     </main>
     <Footer />
