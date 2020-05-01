@@ -57,7 +57,7 @@ module.exports = {
       'aspects': ['invalidHref', 'preferButton']
     }],
     'react/jsx-props-no-spreading': 0,
-    'linebreak-style': ["error", "windows"],
+    'linebreak-style': ["error", "unix"],
   },
   settings: {
     'import/parsers': {

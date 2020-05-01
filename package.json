@@ -10,9 +10,9 @@
     "start": "next start",
     "test": "jest",
     "test:watch": "jest --watch",
-    "lint": "eslint --ext .ts,.tsx -c .eslintrc.js src/** stories/**",
-    "lint:fix": "eslint --ext .ts,.tsx --fix -c .eslintrc.js src/** stories/**",
-    "lint:report": "eslint --ext .ts,.tsx -f html -o ./coverage/eslint.html -c .eslintrc.js src/** stories/**",
+    "lint": "eslint --ext .ts,.tsx src/** stories/**",
+    "lint:fix": "eslint --ext .ts,.tsx --fix src/** stories/**",
+    "lint:report": "eslint --ext .ts,.tsx -f html -o ./coverage/eslint.html src/** stories/**",
     "storybook": "start-storybook -p 6006 -c .storybook",
     "build-storybook": "build-storybook"
   },
