@@ -36,5 +36,5 @@ jobs:
 workflows:
     build-and-test:
       jobs:
-        - lint
         - test
+        - lint
