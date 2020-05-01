@@ -39,5 +39,7 @@ jobs:
 workflows:
     build-and-test:
       jobs:
-        - test
         - lint
+        - test
+          requires:
+            - lint
