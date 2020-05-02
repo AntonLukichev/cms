@@ -24,12 +24,12 @@ const CmsHead: FC<{ title: string; description: string }> = ({ title, descriptio
   </Head>
 );
 
-const Layout: FC = (
+const Layout: FC<LayoutProps> = (
   {
     children,
     title = 'CMS boilerplate',
     description = 'Page CMS boilerplate',
-  }: LayoutProps,
+  },
 ) => (
   <>
     <CmsHead
