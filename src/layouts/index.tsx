@@ -3,13 +3,6 @@ import Head from 'next/head';
 import Header from '../components/Header/Header';
 import Footer from '../components/Footer/Footer';
 
-const layoutStyle = {
-  margin: 20,
-  padding: 20,
-  border: '1px solid #DDD',
-  fontFamily: 'Roboto, sans-serif',
-};
-
 interface LayoutProps {
   children?: React.ReactNode;
   title?: string;
@@ -38,7 +31,6 @@ const Layout: FC<LayoutProps> = (
     />
     <Header />
     <main
-      style={layoutStyle}
       data-testid="mainLayout"
     >
       {children}
