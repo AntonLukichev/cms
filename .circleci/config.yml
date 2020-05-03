@@ -2,16 +2,31 @@ version: 2.1
 orbs:
   node: circleci/node@1.1.6
 jobs:
-  lint:
+  lint-test:
     executor:
       name: node/default
     steps:
       - checkout
+      - restore_cache:
+          keys:
+            - dependency-cache-{{ .Branch }}-{{ checksum "package.json" }}
+            - dependency-cache-{{ .Branch }}-
+            - dependency-cache-
       - node/with-cache:
           steps:
             - run: npm install
             - run: npm run lint:report-html
             - run: npm run lint:report-junit
+            - run:
+                name: "JavaScript Test Suite"
+                command: npm run test:coverage
+                environment:
+                  JEST_JUNIT_OUTPUT: "reports/jest-junit.xml"
+            - run: npm run test:codecov
+      - save_cache:
+          paths:
+            - ./.next/cache
+          key: dependency-cache-{{ .Branch }}-{{ checksum "package.json" }}
       - store_test_results:
           path: ./reports
       - store_artifacts:
@@ -40,5 +55,4 @@ jobs:
 workflows:
     build-and-test:
       jobs:
-        - lint
-        - test
+        - lint-test
