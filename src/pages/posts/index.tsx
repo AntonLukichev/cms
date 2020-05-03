@@ -15,15 +15,15 @@ interface PostsPageProps {
   items: PostItem[];
 }
 
-const PostLink: FC<{item: PostItem}> = ({ item }) => (
-  <div>
+export const PostLink: FC<{item: PostItem}> = ({ item }) => (
+  <div data-testid={`postLink-${item.id}`}>
     <Link href="/posts/[id]" as={`/posts/${item.id}`} key={item.id}>
       <a>{item.title}</a>
     </Link>
   </div>
 );
 
-const PostsPage: NextPage<PostsPageProps> = ({ items }) => (
+export const PostsPage: NextPage<PostsPageProps> = ({ items }) => (
   <Layout>
     {items.map((item: PostItem) => (
       <PostLink item={item} key={item.id} />
