@@ -13,4 +13,11 @@ describe('Layout', () => {
     const rendered = render(<Layout><span>test_render_text</span></Layout>);
     rendered.getByText('test_render_text');
   });
+  it('should header and footer in document', async () => {
+    const { findByTestId } = render(<Layout />);
+    const header = await findByTestId('header');
+    const footer = await findByTestId('footer');
+    expect(header).toBeInTheDocument();
+    expect(footer).toBeInTheDocument();
+  });
 });
