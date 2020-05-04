@@ -22,4 +22,9 @@ const theme = createMuiTheme({
   },
 });
 
+// theme2 from https://mode.com/
+// https://material.io/resources/color/#!/?view.left=0&view.right=1&primary.color=393945&secondary.color=267b48&primary.text.color=ffffff&secondary.text.color=ffffff
+
+// theme3 https://marvelapp.com/styleguide/design/color-scheme
+
 export default responsiveFontSizes(theme);
