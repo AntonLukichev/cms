@@ -26,6 +26,7 @@ export default function CmsApp(props: AppProps): ReactElement {
         <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon-32x32.png" />
         <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon-16x16.png" />
         <link rel="manifest" href="/site.webmanifest" />
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet" />
       </Head>
       <ThemeProvider theme={theme}>
         <CssBaseline />

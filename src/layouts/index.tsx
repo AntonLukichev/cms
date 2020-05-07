@@ -13,7 +13,6 @@ const CmsHead: FC<{ title: string; description: string }> = ({ title, descriptio
   <Head>
     <title>{title}</title>
     <meta name="description" content={description} />
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet" />
   </Head>
 );
 
