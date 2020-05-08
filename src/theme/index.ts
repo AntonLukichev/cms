@@ -1,4 +1,5 @@
 import { createMuiTheme, responsiveFontSizes } from '@material-ui/core/styles';
+import { ruRU } from '@material-ui/core/locale';
 
 const theme = createMuiTheme({
   // https://material.io/resources/color/#!/
@@ -20,7 +21,7 @@ const theme = createMuiTheme({
       default: '#fafafa',
     },
   },
-});
+}, ruRU);
 
 // theme2 from https://mode.com/
 // https://material.io/resources/color/#!/?view.left=0&view.right=1&primary.color=393945&secondary.color=267b48&primary.text.color=ffffff&secondary.text.color=ffffff

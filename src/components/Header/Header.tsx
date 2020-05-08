@@ -1,22 +1,28 @@
 import React, { FC } from 'react';
 import Link from 'next/link';
+import { makeStyles } from '@material-ui/core/styles';
 
-const linkStyle = {
-  marginRight: 15,
+const useStyles = makeStyles((theme) => ({
+  link: {
+    marginRight: theme.spacing(1),
+  },
+}));
+
+const Header: FC = () => {
+  const classes = useStyles();
+  return (
+    <header data-testid="header">
+      <Link href="/">
+        <a title="Home" className={classes.link}>Home</a>
+      </Link>
+      <Link href="/posts">
+        <a title="Posts" className={classes.link}>Posts</a>
+      </Link>
+      <Link href="/about">
+        <a title="About Page" className={classes.link}>About</a>
+      </Link>
+    </header>
+  );
 };
-
-const Header: FC = () => (
-  <header data-testid="header">
-    <Link href="/">
-      <a style={linkStyle} title="Home">Home</a>
-    </Link>
-    <Link href="/posts">
-      <a style={linkStyle} title="Posts">Posts</a>
-    </Link>
-    <Link href="/about">
-      <a style={linkStyle} title="About Page">About</a>
-    </Link>
-  </header>
-);
 
 export default Header;
