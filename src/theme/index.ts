@@ -5,11 +5,15 @@ const theme = createMuiTheme({
   // https://material.io/resources/color/#!/
   // https://material.io/resources/color/#!/?view.left=0&view.right=1&primary.color=22283d&secondary.color=6cc164
   palette: {
+    common: {
+      white: '#fafafa',
+      black: '#050505',
+    },
     primary: {
       light: '#4b5068',
       main: '#22283d',
       dark: '#000018',
-      contrastText: '#fff',
+      contrastText: '#fafafa',
     },
     secondary: {
       light: '#9ef493',
