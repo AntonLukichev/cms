@@ -42,7 +42,7 @@
     "react-dom": "^16.13.1"
   },
   "devDependencies": {
-    "@next/bundle-analyzer": "^9.3.5",
+    "@next/bundle-analyzer": "^9.4.0",
     "@storybook/addon-actions": "^5.3.18",
     "@storybook/addon-info": "^5.3.18",
     "@storybook/addon-links": "^5.3.18",
