@@ -2,6 +2,7 @@ export enum HeaderColors {
   primary = 'primary',
   secondary = 'secondary',
   white = 'white',
+  black = 'black',
   transparent = 'transparent',
 }
 

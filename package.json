@@ -35,6 +35,7 @@
   "homepage": "https://github.com/AntonLukichev/cms#readme",
   "dependencies": {
     "@material-ui/core": "^4.9.14",
+    "@material-ui/icons": "^4.9.1",
     "clsx": "^1.1.0",
     "isomorphic-unfetch": "^3.0.0",
     "next": "^9.4.0",

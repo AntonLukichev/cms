@@ -42,6 +42,14 @@ export const HeaderWhiteStory = (): ReactElement<HeaderProps> => (
   </ComponentWrapper>
 );
 
+export const HeaderBlackStory = (): ReactElement<HeaderProps> => (
+  <ComponentWrapper style={{ backgroundColor: '#fff' }}>
+    <Header
+      color={HeaderColors.black}
+    />
+  </ComponentWrapper>
+);
+
 export const HeaderTransparentStory = (): ReactElement<HeaderProps> => (
   <ComponentWrapper>
     <Header

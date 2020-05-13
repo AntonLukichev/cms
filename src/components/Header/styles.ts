@@ -40,9 +40,14 @@ export const useStyles = makeStyles((theme) => ({
     color: theme.palette.common.black,
     boxShadow: `0 4px 16px 0px rgba(0, 0, 0, 0.14), 0 7px 10px -5px ${theme.palette.grey[100]}`,
   },
+  black: {
+    backgroundColor: theme.palette.common.black,
+    color: theme.palette.common.white,
+    boxShadow: 'none',
+  },
   transparent: {
     backgroundColor: 'transparent !important',
-    boxShadow: 'none',
     color: theme.palette.primary.contrastText,
+    boxShadow: 'none',
   },
 }));
