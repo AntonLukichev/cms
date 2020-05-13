@@ -9,7 +9,6 @@ export default function CmsApp(props: AppProps): ReactElement {
   const { Component, pageProps } = props;
 
   useEffect(() => {
-    // Remove the server-side injected CSS.
     const jssStyles = document.querySelector('#jss-server-side');
     if (jssStyles && jssStyles.parentElement) {
       jssStyles.parentElement.removeChild(jssStyles);
