@@ -1,5 +1,7 @@
 import { makeStyles } from '@material-ui/core/styles';
 
+const drawerWidth = 260;
+
 // eslint-disable-next-line import/prefer-default-export
 export const useStyles = makeStyles((theme) => ({
   link: {
@@ -49,5 +51,19 @@ export const useStyles = makeStyles((theme) => ({
     backgroundColor: 'transparent !important',
     color: theme.palette.primary.contrastText,
     boxShadow: 'none',
+  },
+  toolbarRoot: {
+    width: '100%',
+  },
+  drawer: {
+    width: drawerWidth,
+    flexShrink: 0,
+    whiteSpace: 'nowrap',
+  },
+  drawerPaper: {
+    width: drawerWidth,
+  },
+  drawerFull: {
+    width: '100vw',
   },
 }));

@@ -1,7 +1,7 @@
 {
   "name": "cms-boilerplate",
   "version": "0.1.5",
-  "description": "CMS boilerplate for landings and sites",
+  "description": "CMS boilerplate for sites/blogs/landings",
   "main": "index.js",
   "scripts": {
     "dev": "next",

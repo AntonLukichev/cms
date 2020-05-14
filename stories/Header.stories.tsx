@@ -57,3 +57,23 @@ export const HeaderTransparentStory = (): ReactElement<HeaderProps> => (
     />
   </ComponentWrapper>
 );
+
+export const HeaderDrawerLeftStory = (): ReactElement<HeaderProps> => (
+  <ComponentWrapper>
+    <Header
+      drawer={{
+        anchor: 'left',
+      }}
+    />
+  </ComponentWrapper>
+);
+
+export const HeaderDrawerFullStory = (): ReactElement<HeaderProps> => (
+  <ComponentWrapper>
+    <Header
+      drawer={{
+        full: true
+      }}
+    />
+  </ComponentWrapper>
+);
