@@ -1,6 +1,6 @@
 import React, { FC, ReactElement } from 'react';
 import Header from '../src/components/Header';
-import { HeaderColors, HeaderProps } from '../src/types';
+import { HeaderProps } from '../src/types';
 
 type ComponentWrapperProps = {
   style?: object;
@@ -28,7 +28,7 @@ export const DefaultStory = (): ReactElement => (
 export const HeaderSecondaryNoFixedStory = (): ReactElement<HeaderProps> => (
   <ComponentWrapper>
     <Header
-      color={HeaderColors.secondary}
+      color="secondary"
       fixed={false}
     />
   </ComponentWrapper>
@@ -37,7 +37,7 @@ export const HeaderSecondaryNoFixedStory = (): ReactElement<HeaderProps> => (
 export const HeaderWhiteStory = (): ReactElement<HeaderProps> => (
   <ComponentWrapper style={{ backgroundColor: '#fff' }}>
     <Header
-      color={HeaderColors.white}
+      color="white"
     />
   </ComponentWrapper>
 );
@@ -45,7 +45,7 @@ export const HeaderWhiteStory = (): ReactElement<HeaderProps> => (
 export const HeaderBlackStory = (): ReactElement<HeaderProps> => (
   <ComponentWrapper style={{ backgroundColor: '#fff' }}>
     <Header
-      color={HeaderColors.black}
+      color="black"
     />
   </ComponentWrapper>
 );
@@ -53,7 +53,7 @@ export const HeaderBlackStory = (): ReactElement<HeaderProps> => (
 export const HeaderTransparentStory = (): ReactElement<HeaderProps> => (
   <ComponentWrapper>
     <Header
-      color={HeaderColors.transparent}
+      color="transparent"
     />
   </ComponentWrapper>
 );

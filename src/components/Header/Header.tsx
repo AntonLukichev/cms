@@ -13,11 +13,11 @@ import {
 import Menu from '@material-ui/icons/Menu';
 import clsx from 'clsx';
 import { useStyles } from './styles';
-import { HeaderProps, HeaderColors } from '../../types';
+import { HeaderProps } from '../../types';
 
 const Header: FC<HeaderProps> = ({
   fixed = true,
-  color = HeaderColors.primary,
+  color = 'primary',
   logo = true,
   drawer = {
     anchor: 'right',

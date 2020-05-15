@@ -3,17 +3,16 @@ export interface DrawerProps {
   full?: boolean; // full width
 }
 
-export enum HeaderColors {
-  primary = 'primary',
-  secondary = 'secondary',
-  white = 'white',
-  black = 'black',
-  transparent = 'transparent',
-}
+export type HeaderColorsType =
+  | 'primary'
+  | 'secondary'
+  | 'white'
+  | 'black'
+  | 'transparent';
 
 export interface HeaderProps {
   fixed?: boolean; // position fixed/absolute
-  color?: HeaderColors; // color theme
+  color?: HeaderColorsType; // color theme
   logo?: boolean; // show/not Logo
   drawer?: DrawerProps;
 }
