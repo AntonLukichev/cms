@@ -5,7 +5,6 @@ import {
 } from '@testing-library/react';
 import { themeWraper } from '../../utils/test';
 import Header from './index';
-import { HeaderColors } from '../../types';
 
 describe('Header', () => {
   afterEach(cleanup);
@@ -31,7 +30,7 @@ describe('Header', () => {
   it('should render with white color props', async () => {
     const { findByTestId } = render(themeWraper(
       <Header
-        color={HeaderColors.white}
+        color="white"
       />
     ));
     const header = await findByTestId('header');

@@ -81,14 +81,14 @@ const Header: FC<HeaderProps> = ({
       <Hidden mdUp implementation="css">
         <Drawer
           variant="temporary"
-          anchor={drawer?.anchor}
+          anchor={drawer.anchor}
           open={menuOpen}
           onClose={handleMenuToggle}
           className={clsx(classes.drawer, {
-            [classes.drawerFull]: drawer?.full, // TODO if full add close button
+            [classes.drawerFull]: drawer.full, // TODO if full add close button
           })}
           classes={{
-            paper: drawer?.full ? classes.drawerFull : classes.drawerPaper,
+            paper: drawer.full ? classes.drawerFull : classes.drawerPaper,
           }}
         >
           <Link href="/">

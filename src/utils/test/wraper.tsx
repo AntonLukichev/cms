@@ -2,7 +2,7 @@ import React, { ReactElement, ReactNode } from 'react';
 import { ThemeProvider } from '@material-ui/core';
 import theme from '../../theme';
 
-export const actWraper = () => {
+export const actWraper = (): void => {
   // for clear React components
 };
 
