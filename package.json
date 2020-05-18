@@ -1,7 +1,7 @@
 {
   "name": "cms-boilerplate",
-  "version": "0.1.4",
-  "description": "CMS boilerplate for landings and sites",
+  "version": "0.1.5",
+  "description": "CMS boilerplate for sites/blogs/landings",
   "main": "index.js",
   "scripts": {
     "dev": "next",
@@ -35,6 +35,7 @@
   "homepage": "https://github.com/AntonLukichev/cms#readme",
   "dependencies": {
     "@material-ui/core": "^4.9.14",
+    "@material-ui/icons": "^4.9.1",
     "clsx": "^1.1.0",
     "isomorphic-unfetch": "^3.0.0",
     "next": "^9.4.1",

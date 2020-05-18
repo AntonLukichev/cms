@@ -51,6 +51,12 @@ module.exports = {
       'ts': 'never',
       'tsx': 'never',
     }],
+    'import/no-extraneous-dependencies': ['error', {
+      devDependencies: [
+        '**/*.test.{ts,tsx}',
+        '**/*.spec.{ts,tsx}',
+      ]
+    }],
     'jsx-a11y/anchor-is-valid': ['error', {
       'components': ['Link'],
       'specialLink': ['hrefLeft', 'hrefRight'],
@@ -58,6 +64,13 @@ module.exports = {
     }],
     'react/jsx-props-no-spreading': 0,
     'linebreak-style': ["error", "unix"],
+    'comma-dangle': ['error', {
+      'arrays': 'only-multiline',
+      'objects': 'only-multiline',
+      'imports': 'only-multiline',
+      'exports': 'only-multiline',
+      'functions': 'never',
+    }]
   },
   settings: {
     'import/parsers': {

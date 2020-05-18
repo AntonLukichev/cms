@@ -21,7 +21,7 @@ const Layout: FC<LayoutProps> = (
     children,
     title = 'CMS boilerplate',
     description = 'Page CMS boilerplate',
-  },
+  }
 ) => (
   <>
     <CmsHead
