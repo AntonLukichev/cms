@@ -24,6 +24,10 @@ logs
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+lerna-debug.log*
+
+# Diagnostic reports (https://nodejs.org/api/report.html)
+report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
 
 # Runtime data
 pids
@@ -34,9 +38,13 @@ pids
 # Coverage directory used by tools like istanbul
 /coverage
 /reports
+*.lcov
 
 # Dependency directories
 /node_modules
+
+# TypeScript cache
+*.tsbuildinfo
 
 # Optional npm cache directory
 .npm
@@ -49,6 +57,13 @@ pids
 
 # Yarn Integrity file
 .yarn-integrity
+
+# yarn v2
+.yarn/cache
+.yarn/unplugged
+.yarn/build-state.yml
+.yarn/install-state.gz
+.pnp.*
 
 # dotenv environment variables file
 .env.local
