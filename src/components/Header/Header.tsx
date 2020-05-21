@@ -106,4 +106,6 @@ const Header: FC<HeaderProps> = ({
   );
 };
 
+Header.whyDidYouRender = true;
+
 export default Header;

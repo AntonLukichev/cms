@@ -36,6 +36,7 @@
   "dependencies": {
     "@material-ui/core": "^4.9.14",
     "@material-ui/icons": "^4.9.1",
+    "@welldone-software/why-did-you-render": "^4.2.2",
     "clsx": "^1.1.0",
     "isomorphic-unfetch": "^3.0.0",
     "next": "^9.4.1",

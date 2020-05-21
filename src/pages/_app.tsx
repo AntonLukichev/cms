@@ -3,7 +3,12 @@ import Head from 'next/head';
 import { AppProps } from 'next/app';
 import { ThemeProvider } from '@material-ui/core/styles';
 import CssBaseline from '@material-ui/core/CssBaseline';
+import whyDidYouRender from '@welldone-software/why-did-you-render';
 import theme from '../theme';
+
+if (typeof window !== 'undefined' && process.env.NODE_ENV === 'development') {
+  whyDidYouRender(React);
+}
 
 export default function CmsApp(props: AppProps): ReactElement {
   const { Component, pageProps } = props;
