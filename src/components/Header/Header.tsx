@@ -100,6 +100,9 @@ const Header: FC<HeaderProps> = ({
           <Link href="/about">
             <a title="About Page" className={classes.link}>About</a>
           </Link>
+          <Link href="/test">
+            <a title="Posts" className={classes.link}>Test</a>
+          </Link>
         </Drawer>
       </Hidden>
     </AppBar>
