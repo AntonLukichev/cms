@@ -65,6 +65,9 @@ const Header: FC<HeaderProps> = ({
             <Link href="/about">
               <a title="About Page" className={classes.link}>About</a>
             </Link>
+            <Link href="/temp">
+              <a title="Temp" className={classes.link}>Temp</a>
+            </Link>
           </Box>
           <Box flexShrink={0}>
             <Hidden mdUp implementation="css">
@@ -100,8 +103,8 @@ const Header: FC<HeaderProps> = ({
           <Link href="/about">
             <a title="About Page" className={classes.link}>About</a>
           </Link>
-          <Link href="/test">
-            <a title="Posts" className={classes.link}>Test</a>
+          <Link href="/temp">
+            <a title="Temp" className={classes.link}>Temp</a>
           </Link>
         </Drawer>
       </Hidden>

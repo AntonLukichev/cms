@@ -26,10 +26,13 @@
     "target": "esnext"
   },
   "exclude": [
-    "node_modules"
+    "node_modules",
+    ".next"
   ],
   "include": [
-    "src",
-    "stories"
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    "**/*.js"
   ]
 }
