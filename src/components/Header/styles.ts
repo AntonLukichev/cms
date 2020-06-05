@@ -8,16 +8,8 @@ export const useStyles = makeStyles((theme) => ({
     marginRight: theme.spacing(1),
   },
   appBar: {
-    display: 'flex',
-    border: 0,
-    borderRadius: theme.spacing(0.5),
-    width: '100%',
     transition: 'all 150ms ease 0s',
-    alignItems: 'center',
-    flexFlow: 'row nowrap',
-    justifyContent: 'flex-start',
-    position: 'relative',
-    zIndex: 'unset',
+    fontFamily: 'Roboto',
   },
   fixed: {
     position: 'fixed',

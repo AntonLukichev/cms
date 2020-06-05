@@ -10,6 +10,9 @@ module.exports = {
     '@storybook/addon-actions',
     '@storybook/addon-links',
     '@storybook/addon-storysource',
+    '@storybook/addon-viewport/register',
+    '@storybook/addon-backgrounds/register',
+    '@storybook/addon-a11y/register',
   ],
   webpackFinal: async config => {
     config.module.rules.push({
