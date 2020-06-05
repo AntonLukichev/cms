@@ -25,6 +25,9 @@ const theme = createMuiTheme({
       default: '#fafafa',
     },
   },
+  typography: {
+    fontFamily: 'Roboto',
+  },
   /* breakpoints: {
     values: {
       xs: 0,

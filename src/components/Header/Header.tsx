@@ -32,11 +32,14 @@ const Header: FC<HeaderProps> = ({
 
   console.log(JSON.stringify({ isMobile, isTablet, isDesktop })); */
 
-  const classNameAppBar = clsx({
-    [classes.fixed]: fixed,
-    [classes.absolute]: !fixed,
-    [classes[color]]: color,
-  });
+  const classNameAppBar = clsx(
+    classes.appBar,
+    {
+      [classes.fixed]: fixed,
+      [classes.absolute]: !fixed,
+      [classes[color]]: color,
+    }
+  );
 
   const handleMenuToggle = (): void => {
     setMenuOpen(!menuOpen);

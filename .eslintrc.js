@@ -55,6 +55,7 @@ module.exports = {
       devDependencies: [
         '**/*.test.{ts,tsx}',
         '**/*.spec.{ts,tsx}',
+        '**/*.stories.{ts,tsx}',
       ]
     }],
     'jsx-a11y/anchor-is-valid': ['error', {
