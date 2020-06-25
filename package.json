@@ -23,7 +23,14 @@
     "type": "git",
     "url": "git+https://github.com/AntonLukichev/cms.git"
   },
-  "keywords": [],
+  "keywords": [
+    "cms",
+    "headless",
+    "boilerplate",
+    "react",
+    "graphql",
+    "nextjs"
+  ],
   "author": {
     "name": "Anton Lukichev",
     "email": "anton@lukichev.pro"
@@ -56,7 +63,7 @@
     "@storybook/preset-typescript": "^3.0.0",
     "@storybook/react": "^5.3.19",
     "@testing-library/jest-dom": "^5.10.1",
-    "@testing-library/react": "^10.3.0",
+    "@testing-library/react": "^10.4.1",
     "@types/jest": "^26.0.0",
     "@types/node": "^14.0.13",
     "@types/react": "^16.9.38",
