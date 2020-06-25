@@ -23,7 +23,14 @@
     "type": "git",
     "url": "git+https://github.com/AntonLukichev/cms.git"
   },
-  "keywords": [],
+  "keywords": [
+    "cms",
+    "headless",
+    "boilerplate",
+    "react",
+    "graphql",
+    "nextjs"
+  ],
   "author": {
     "name": "Anton Lukichev",
     "email": "anton@lukichev.pro"
