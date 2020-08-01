@@ -22,7 +22,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: Use Node.js ${{ matrix.node-version }}
-        uses: actions/setup-node@v2.1.0
+        uses: actions/setup-node@v2.1.1
         with:
           node-version: ${{ matrix.node-version }}
       - name: Get npm cache directory
@@ -47,7 +47,7 @@ jobs:
         env:
           CI: true
       - name: Archive ESLint results
-        uses: actions/upload-artifact@v2.0.1
+        uses: actions/upload-artifact@2.1.0
         with:
           name: eslint-report
           path: reports/eslint.html
