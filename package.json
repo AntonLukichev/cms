@@ -42,7 +42,7 @@
   "homepage": "https://github.com/AntonLukichev/cms#readme",
   "dependencies": {
     "@material-ui/core": "^4.11.0",
-    "@material-ui/icons": "^4.9.1",
+    "@material-ui/icons": "^4.11.2",
     "clsx": "^1.1.1",
     "isomorphic-unfetch": "^3.0.0",
     "next": "^9.5.1",
