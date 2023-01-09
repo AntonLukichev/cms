@@ -47,7 +47,7 @@ jobs:
         env:
           CI: true
       - name: Archive ESLint results
-        uses: actions/upload-artifact@v2.1.2
+        uses: actions/upload-artifact@v3.1.2
         with:
           name: eslint-report
           path: reports/eslint.html
